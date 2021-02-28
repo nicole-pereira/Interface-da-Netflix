@@ -1,0 +1,67 @@
+:root{
+    --preto: #141414;
+    --vermelha: #e50914;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*elemtos base*/
+
+body{
+    background:var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelha);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/*principal*/
+
+.principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/capa-friends.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .descricao{
+    margin-bottom:40px;
+}
+
+.titulo{
+    font-size: 45px;
+    margin-bottom: 1px;
+}
